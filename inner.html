@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html"><img class="logo-image" src="img/logo-image.png" width="138" height="70" alt="logo">
+      </a>
+    </div>
+    <nav class="main-navigation clearfix">
+      <ul class="left-side">
+        <li><a class="active" href="#">ИНФОРМАЦИЯ</a></li>
+        <li><a class="link-2" href="#">ФОТО И ВИДЕО</a></li>
+      </ul>
+      <ul class="right-side">
+        <li><a class="link-3" href="#"> КАРТА ШТАТА</a></li>
+        <li><a href="#">ГОСТИНИЦЫ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container clearfix">
+    <div class="bg-form">
+      <form class="form clearfix" action="htpps://www.htmlacademy.ru" method="post">
+        <div class="infrastructure">
+          <h2>ИНФРАСТРУКТУРА:</h2>
+          <input type="checkbox" name="pool" id="pool" checked>
+          <label for="pool">БАССЕЙН</label>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">ПАРКОВКА</label>
+          <input type="checkbox" name="wi-fi" id="wi-fi">
+          <label for="wi-fi">WI-FI</label>
+        </div>
+        <div class="housing">
+          <h2>ТИП&nbsp;ЖИЛЬЯ:</h2>
+          <input type="checkbox" name="hotel" id="hotel" checked>
+          <label for="hotel">ГОСТИНИЦА</label>
+          <input type="checkbox" name="motel" id="motel" checked>
+          <label for="motel">МОТЕЛЬ</label>
+          <input type="checkbox" name="apartment" id="apartment" checked>
+          <label for="apartment">АПАРТАМЕНТЫ</label>
+        </div>
+        <div class="price">
+          <div class="filter-range-title">СТОИМОСТЬ В СУТКИ (Р):</div>
+          <div class="price-controls">
+            <div class="min-price">
+              <label for="min-price">ОТ</label>
+              <input type="text" name="min-price" id="min-price" value="0">
+            </div>
+            <div class="max-price">
+              <label for="max-price">ДО</label>
+              <input type="text" name="max-price" id="max-price" value="3000">
+            </div>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">ПОКАЗАТЬ</button>
+        </div>
+      </form>
+    </div>
+    <div class="search-result clearfix">
+      <div class="search-found">
+        НАЙДЕНО: 3
+      </div>
+      <div class="search-sorting">
+        <span>СОРТИРОВКА:</span>
+        <a class="active" href="#">ПО ЦЕНЕ</a>
+        <a class="sort" href="#">ПО ТИПУ</a>
+        <a class="sort" href="#">ПО РЕЙТИНГУ</a>
+      </div>
+      <div class="search-arrows">
+        <a class="top"></a>
+        <a class="bottom"></a>
+      </div>
+    </div>
+    <div class="hotel clearfix hotel-border">
+      <div class="hotel-photo">
+        <img src="img/option-1.jpg" width="135" height="90" alt="1">
+      </div>
+      <div class="hotel-info">
+        <div class="hotel-title">
+          <a href="#" class="hotel-title">AMARA RESORT &amp; SPA</a>
+        </div>
+        <div class="hotel-type">
+          ГОСТИНИЦА
+        </div>
+        <div class="hotel-price">
+          ОТ 3500 Р.
+        </div>
+        <a href="#" class="btn-read-more">ПОДРОБНЕЕ</a>
+        <a href="#" class="btn-booking">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-rating">
+        <div class="stars stars-4">
+        </div>
+        <div class="score">
+          РЕЙТИНГ: 8,5
+        </div>
+      </div>
+    </div>
+    <div class="hotel hotel-2 clearfix">
+      <div class="hotel-photo">
+        <img src="img/option-2.jpg" width="135" height="90" alt="1">
+      </div>
+      <div class="hotel-info">
+        <div class="hotel-title">
+          <a href="#" class="hotel-title">DESERT QUAIL INN</a>
+        </div>
+        <div class="hotel-type">
+          МОТЕЛЬ
+        </div>
+        <div class="hotel-price">
+          ОТ 2000 Р.
+        </div>
+        <a href="#" class="btn-read-more">ПОДРОБНЕЕ</a>
+        <a href="#" class="btn-booking">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-rating">
+        <div class="stars stars-2">
+        </div>
+        <div class="score">
+          РЕЙТИНГ: 8,9
+        </div>
+      </div>
+    </div>
+    <div class="hotel hotel-3 clearfix">
+      <div class="hotel-photo">
+        <img src="img/option-3.jpg" width="135" height="90" alt="1">
+      </div>
+      <div class="hotel-info">
+        <div class="hotel-title">
+          <a href="#" class="hotel-title">VILLAS AT POCO DIABLO</a>
+        </div>
+        <div class="hotel-type">
+          АПАРТАМЕНТЫ
+        </div>
+        <div class="hotel-price">
+          ОТ 4000 Р.
+        </div>
+        <a href="#" class="btn-read-more">ПОДРОБНЕЕ</a>
+        <a href="#" class="btn-booking">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-rating">
+        <div class="stars stars-3">
+        </div>
+        <div class="score">
+          РЕЙТИНГ: 9,2
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer inner-page-footer clearfix">
+    <div class="footer-visit footer-column">
+      #VISITSEDONA
+    </div>
+    <section class="footer-social footer-column">
+      <a class="social social-btn-tw " href="# "></a>
+      <a class="social social-btn-fb " href="# "></a>
+      <a class="social social-btn-yt " href="# "></a>
+    </section>
+    <section class="footer-copyright footer-column">
+      <span class="website">WEBSITE BY</span>
+      <a class="htmlacademy" href="#">
+      </a>
+    </section>
+  </footer>
+</body>
+
+</html>
